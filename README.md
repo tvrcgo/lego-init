@@ -14,6 +14,7 @@ lego.start()
 应用按如下目录结构组织代码，易维护和扩展
 - `app`
   - `agent` 代理
+  - `job` 定时任务
   - `plugin` 插件
   - `middleware` 中件间
   - `service` 服务
@@ -23,9 +24,9 @@ lego.start()
   - `index.js` 入口文件
 - `config`
   - `config.js` 其它配置
-  - `mount.js` 加载配置，包括 agent, plugin, middleware
+  - `mount.js` 加载配置，包括 agent, plugin, middleware, job
 
-## Technical Stack
+## Stack
 - `koa` 中间件框架，koa@v2
 - `React` 前端
 - `Babel` ES6支持

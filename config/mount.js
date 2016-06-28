@@ -23,3 +23,10 @@ exports.middleware = {
 exports.agent = {
   livereload: {}
 }
+
+// 加载的job
+exports.job = {
+  timer: {
+    cron: '*/2 * * * * *'
+  }
+}

@@ -6,7 +6,7 @@ module.exports = (agent, opts) => {
   agent.on('workers-ready', msg => {
     const startOpts = msg.options
     // start browser-sync on developing
-    if (agent.mnt.config.env !== 'develop') {
+    if (agent.mnt.config.env !== 'develop' || startOpts.mode === 'job') {
       return
     }
     if (agent.bs) {
