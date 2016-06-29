@@ -5,9 +5,10 @@
   "main": "app/index.js",
   "private": true,
   "scripts": {
-    "start": "cd .build && node app/index.js",
+    "start": "lego release && cd dist && node app/index",
+    "dev": "lego build && cd .build && node app/index",
     "lint": "eslint app config *.js",
-    "build": "webpack -d --watch"
+    "build": "lego build --watch"
   },
   "keywords": [
     "node.js",
@@ -24,7 +25,6 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "browser-sync": "^2.13.0",
-    "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
     "eslint": "^2.11.1",
     "sass-loader": "^3.2.0",
