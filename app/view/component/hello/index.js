@@ -1,4 +1,6 @@
 
+import './hello.scss'
+
 class Hello extends React.Component {
   render() {
     return (
