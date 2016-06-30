@@ -2,11 +2,12 @@
 // 加载的插件
 exports.plugin = {
   combo: {
-    enable: false,
+    enable: true,
     path: 'lego-combo'
   },
   view: {
-    path: 'lego-render',
+    enable: true,
+    package: 'lego-render',
     options: {
       ext: 'html'
     }
