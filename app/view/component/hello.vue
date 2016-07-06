@@ -1,5 +1,5 @@
 <template>
-  <h1>Hello Vue</h1>
+  <h1>Vue Component</h1>
   <p>{{ hi }}</p>
 </template>
 
