@@ -448,7 +448,7 @@
 /* 9 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<h1 _v-0de77330=\"\">Bravo !</h1>\n<p _v-0de77330=\"\">App entry here.</p>\n<router-view _v-0de77330=\"\"></router-view>\n";
+	module.exports = "\n<h1 _v-0de77330=\"\">Bravo !</h1>\n<p _v-0de77330=\"\">Nav: <a v-link=\"{ path: '/' }\" _v-0de77330=\"\">Home</a>, <a v-link=\"{ path: '/hi' }\" _v-0de77330=\"\">Hello</a></p>\n<router-view _v-0de77330=\"\"></router-view>\n";
 
 /***/ },
 /* 10 */

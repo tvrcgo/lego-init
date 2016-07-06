@@ -38,10 +38,6 @@ module.exports = {
         exclude: ['node_modules']
       },
       {
-        test: /\.scss$/,
-        loader: 'style!css!sass'
-      },
-      {
         test: /\.vue$/,
         loader: 'vue'
       }
@@ -57,13 +53,6 @@ module.exports = {
         from: 'app/view/lib',
         to: 'lib',
       }
-    ], {
-      ignore: [
-        '**/node_modules/**/*',
-        'LICENSE',
-        'README.md',
-        '.*'
-      ]
-    })
+    ])
   ]
 }
