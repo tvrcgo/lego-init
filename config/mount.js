@@ -22,7 +22,9 @@ exports.middleware = {
 
 // 加载的agent
 exports.agent = {
-  livereload: {}
+  livereload: {
+    package: 'lego-livereload'
+  }
 }
 
 // 加载的job

@@ -7,8 +7,8 @@
   "scripts": {
     "start": "node app",
     "lint": "eslint app/**",
-    "lego:dev": "webpack --config ./build/webpack.config.base.js -w",
-    "lego:prod": "webpack --config ./build/webpack.config.base.js -p"
+    "build:dev": "webpack --config ./build/webpack.config.base.js -w",
+    "build:prod": "webpack --config ./build/webpack.config.base.js -p"
   },
   "keywords": [
     "node.js",
@@ -17,7 +17,8 @@
   "author": "tvrcgo",
   "license": "MIT",
   "dependencies": {
-    "lego": "tvrcgo/lego"
+    "lego": "github:tvrcgo/lego",
+    "lego-render": "github:tvrcgo/lego-render"
   },
   "devDependencies": {
     "babel-loader": "^6.2.4",
@@ -29,9 +30,10 @@
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
     "eslint": "^2.11.1",
+    "lego-livereload": "github:lego-component/livereload",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
-    "vue-hot-reload-api": "^2.0.5",
+    "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.2.3",
     "vue-loader": "^8.5.3",
     "vue-style-loader": "^1.0.0",
