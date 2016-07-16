@@ -10,7 +10,9 @@ exports.plugin = {
     package: 'lego-render',
     ext: 'html'
   },
-  static: true
+  static: {
+    path: 'lego-static'
+  }
 }
 
 // 加载的中间件及配置
