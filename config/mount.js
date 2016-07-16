@@ -8,9 +8,7 @@ exports.plugin = {
   view: {
     enable: true,
     package: 'lego-render',
-    options: {
-      ext: 'html'
-    }
+    ext: 'html'
   },
   static: true
 }
@@ -24,7 +22,8 @@ exports.middleware = {
 exports.agent = {
   livereload: {
     package: 'lego-livereload'
-  }
+  },
+  test: {}
 }
 
 // 加载的job
