@@ -1,6 +1,6 @@
 <template>
   <h1>Bravo !</h1>
-  <p>Nav: <a v-link="{ path: '/' }">Home</a>, <a v-link="{ path: '/hi' }">Hello</a></p>
+  <p><a v-link="{ path: '/' }">Home</a>, <a v-link="{ path: '/hi' }">Hello</a></p>
   <router-view></router-view>
 </template>
 
