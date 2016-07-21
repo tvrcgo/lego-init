@@ -7,8 +7,8 @@
   "scripts": {
     "start": "node app",
     "lint": "eslint app/**",
-    "build:dev": "webpack --config ./build/webpack.config.base.js -w",
-    "build:prod": "webpack --config ./build/webpack.config.base.js -p"
+    "watch": "webpack --config ./build/webpack.config.base.js -w",
+    "dist": "webpack --config ./build/webpack.config.base.js -p"
   },
   "keywords": [
     "node.js",
@@ -31,11 +31,12 @@
     "css-loader": "^0.23.1",
     "eslint": "^2.11.1",
     "lego-livereload": "github:lego-component/livereload",
-    "sass-loader": "^3.2.0",
+    "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
+    "css-loader": "^0.23.1",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.2.3",
-    "vue-loader": "^8.5.3",
+    "vue-loader": "^8.5.2",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.13.1"
   }
