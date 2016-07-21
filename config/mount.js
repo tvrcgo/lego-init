@@ -1,22 +1,14 @@
 
 // 加载的插件
 exports.plugin = {
-  combo: {
-    enable: true,
-    path: 'lego-combo'
-  },
   view: {
     enable: true,
     package: 'lego-render',
     ext: 'html'
   },
   static: {
-    path: 'lego-static'
-  }
-}
-
-// 加载的中间件及配置
-exports.middleware = {
+    package: 'lego-static'
+  },
   performance: {}
 }
 

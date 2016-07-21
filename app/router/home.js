@@ -2,7 +2,7 @@
 
 exports.me = (ctx, next) => {
   ctx.service.db.get('me')
-  ctx.render('index', {
+  ctx.render('index/index', {
     msg: 'it works'
   })
 }

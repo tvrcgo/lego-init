@@ -4,23 +4,23 @@ const webpack = require('webpack')
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-const APP_ROOT = process.cwd()
+const ROOT = process.cwd()
 
 module.exports = {
   entry: {
-    main: path.resolve(APP_ROOT, 'app/view/main.js')
+    index: path.resolve(ROOT, 'app/view/index/index.js')
   },
   output: {
-    path: 'app/public/',
+    path: 'app/public/bundle',
     filename: '[name].js'
   },
   resolve: {
     root: [
-      path.resolve(APP_ROOT, 'app/view/component')
+      path.resolve(ROOT, 'app/view/component')
     ],
     extensions: ['', '.js', '.jsx', '.json', '.vue'],
     alias: {
-      '@component': path.resolve(APP_ROOT, 'app/view/component')
+      '@component': path.resolve(ROOT, 'app/view/component')
     }
   },
   module: {
@@ -33,7 +33,7 @@ module.exports = {
           presets: ['es2015', 'stage-0', 'react']
         },
         include: [
-          path.resolve(APP_ROOT, 'app/view')
+          path.resolve(ROOT, 'app/view')
         ],
         exclude: ['node_modules']
       },
@@ -45,14 +45,13 @@ module.exports = {
   },
   externals: {
     'vue': 'Vue',
-    'vue-router': 'VueRouter'
+    'vue-router': 'VueRouter',
+    'react': 'React',
+    'react-dom': 'ReactDom'
   },
   plugins: [
     new CopyWebpackPlugin([
-      {
-        from: 'app/view/lib',
-        to: 'lib',
-      }
+
     ])
   ]
 }

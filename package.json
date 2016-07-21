@@ -18,7 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "lego": "github:tvrcgo/lego",
-    "lego-render": "github:lego-component/lego-render"
+    "lego-render": "github:lego-component/render",
+    "lego-static": "github:lego-component/static"
   },
   "devDependencies": {
     "babel-loader": "^6.2.4",
