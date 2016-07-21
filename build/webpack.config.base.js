@@ -6,9 +6,14 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const ROOT = process.cwd()
 
+const entry = (name) => {
+  return path.resolve(ROOT, 'app/view/entry/', name, name)
+}
+
 module.exports = {
   entry: {
-    index: path.resolve(ROOT, 'app/view/index/index.js')
+    index: entry('index'),
+    react: entry('react'),
   },
   output: {
     path: 'app/public/bundle',
@@ -18,7 +23,7 @@ module.exports = {
     root: [
       path.resolve(ROOT, 'app/view/component')
     ],
-    extensions: ['', '.js', '.jsx', '.json', '.vue'],
+    extensions: ['', '.js', '.jsx', '.json'],
     alias: {
       '@component': path.resolve(ROOT, 'app/view/component')
     }
@@ -36,6 +41,10 @@ module.exports = {
           path.resolve(ROOT, 'app/view')
         ],
         exclude: ['node_modules']
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
       },
       {
         test: /\.vue$/,

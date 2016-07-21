@@ -2,9 +2,11 @@
 
 exports.me = (ctx, next) => {
   ctx.service.db.get('me')
-  ctx.render('index/index', {
-    msg: 'it works'
-  })
+  ctx.render('entry/index/index', {})
+}
+
+exports.react = (ctx, next) => {
+  ctx.render('entry/react/react', {})
 }
 
 exports.she = (ctx, next) => {
