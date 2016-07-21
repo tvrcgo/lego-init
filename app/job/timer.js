@@ -1,5 +1,5 @@
 
-module.exports = (job) => {
+module.exports = (job, options) => {
 
   // init job
   console.log('init job', process.pid)

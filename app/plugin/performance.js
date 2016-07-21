@@ -2,7 +2,7 @@
 module.exports = function(opts) {
   return (ctx, next) => {
     const start = +new Date;
-    next().then(() => {
+    return next().then(() => {
       console.log(ctx.method, ctx.status, ctx.request.href);
       if (ctx.status === 404) {
         return ctx.throw(404);

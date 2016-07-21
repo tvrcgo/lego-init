@@ -1,12 +1,11 @@
 
 import './hello.scss'
 
-class Hello extends React.Component {
-  render() {
+export default class Hello extends React.Component {
+
+  render () {
     return (
-      <h1>Hello React</h1>
+      <div>Hi React</div>
     )
   }
 }
-
-export default Hello
