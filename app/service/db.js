@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
 class DB {
-  
+
   constructor() {
 
   }

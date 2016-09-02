@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 exports.me = (ctx, next) => {
   ctx.service.db.get('me')

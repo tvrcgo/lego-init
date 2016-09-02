@@ -1,15 +1,15 @@
 
 module.exports = function(opts) {
   return (ctx, next) => {
-    const start = +new Date;
+    const start = +new Date
     return next().then(() => {
-      console.log(ctx.method, ctx.status, ctx.request.href);
+      console.log(ctx.method, ctx.status, ctx.request.href)
       if (ctx.status === 404) {
-        return ctx.throw(404);
+        return ctx.throw(404)
       }
-      ctx.set('X-Duration', +new Date - start);
+      ctx.set('X-Duration', +new Date - start)
     }).catch(err => {
-      console.error(ctx.method, ctx.status, ctx.request.href, err);
-    });
+      console.error(ctx.method, ctx.status, ctx.request.href, err)
+    })
   }
-};
+}

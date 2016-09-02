@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "start": "node app",
+    "dev": "npm run watch & npm start",
     "lint": "eslint app *.js",
     "watch": "webpack --config ./build/webpack.config.base.js -w",
     "dist": "webpack --config ./build/webpack.config.base.js -p"
