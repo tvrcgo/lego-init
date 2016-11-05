@@ -1,5 +1,5 @@
 
-module.exports = function(opts) {
+module.exports = function(opts, app) {
   return (ctx, next) => {
     const start = +new Date
     return next().then(() => {
@@ -9,7 +9,7 @@ module.exports = function(opts) {
       }
       ctx.set('X-Duration', +new Date - start)
     }).catch(err => {
-      console.error(ctx.method, ctx.status, ctx.request.href, err)
+      console.error(ctx.method, ctx.status, ctx.request.href, err.message)
     })
   }
 }
