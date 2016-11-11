@@ -1,25 +1,28 @@
 
 // 加载的插件
 exports.plugin = {
-  combo: {
-    enable: false,
-    path: 'lego-combo'
-  },
   view: {
-    path: 'lego-render',
-    options: {
-      ext: 'html'
-    }
+    enable: true,
+    package: 'lego-render',
+    ext: 'html'
   },
-  static: true
-}
-
-// 加载的中间件及配置
-exports.middleware = {
+  static: {
+    package: 'lego-static'
+  },
   performance: {}
 }
 
 // 加载的agent
 exports.agent = {
-  livereload: {}
+  livereload: {
+    package: 'lego-livereload'
+  },
+  test: {}
+}
+
+// 加载的job
+exports.job = {
+  timer: {
+    cron: '*/2 * * * * *'
+  }
 }

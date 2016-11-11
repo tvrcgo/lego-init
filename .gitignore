@@ -6,3 +6,5 @@ logs
 .idea/
 .DS_Store
 dist
+.*/
+app/public/bundle

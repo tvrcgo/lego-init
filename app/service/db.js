@@ -1,13 +1,16 @@
-'use strict';
+'use strict'
 
 class DB {
+
   constructor() {
 
   }
 
   get(key) {
-    
+
   }
 }
 
-module.exports = new DB;
+module.exports = (config) => {
+  return new DB
+}
