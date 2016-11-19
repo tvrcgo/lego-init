@@ -15,7 +15,6 @@ lego.start()
 - `app`
   - `agent` 代理
   - `plugin` 插件
-  - `service` 服务
   - `router` 路由
   - `public` 静态资源
   - `view` 视图模板
