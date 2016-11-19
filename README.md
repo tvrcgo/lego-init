@@ -14,7 +14,6 @@ lego.start()
 应用按如下目录结构组织代码，易维护和扩展
 - `app`
   - `agent` 代理
-  - `job` 定时任务
   - `plugin` 插件
   - `service` 服务
   - `router` 路由

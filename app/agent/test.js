@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = (agent, options) => {
+module.exports = (options, agent) => {
 
   agent.ready()
 }
