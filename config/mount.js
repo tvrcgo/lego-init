@@ -16,6 +16,5 @@ exports.plugin = {
 exports.agent = {
   livereload: {
     package: 'lego-livereload'
-  },
-  test: {}
+  }
 }

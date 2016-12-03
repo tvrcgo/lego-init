@@ -1,5 +1,5 @@
 
-const BrowserSync = require('browser-sync');
+const BrowserSync = require('browser-sync')
 
 module.exports = (agent, opts) => {
 
@@ -12,7 +12,7 @@ module.exports = (agent, opts) => {
     if (agent.bs) {
       return agent.bs.reload()
     }
-    agent.bs = BrowserSync.create();
+    agent.bs = BrowserSync.create()
     agent.bs.init({
       proxy: 'localhost:' + (startOpts.port || 1024),
       ui: false,
@@ -34,10 +34,8 @@ module.exports = (agent, opts) => {
         {
           match: [
             "app/agent/**/*.js",
-            "app/middleware/**/*.js",
             "app/plugin/**/*.js",
             "app/router/**/*.js",
-            "app/service/**/*.js",
             "config/*.js",
             "lego/**/*.js"
           ],
