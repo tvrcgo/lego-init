@@ -8,8 +8,8 @@
     "start": "node app",
     "dev": "npm run watch & npm start",
     "lint": "eslint app *.js",
-    "watch": "webpack --config ./build/webpack.config.base.js -w",
-    "dist": "webpack --config ./build/webpack.config.base.js -p"
+    "watch": "webpack --config ./build/webpack.config.js -w",
+    "dist": "webpack --config ./build/webpack.config.js -p"
   },
   "keywords": [
     "node.js",

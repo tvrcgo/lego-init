@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const ROOT = process.cwd()
 
 const entry = (name) => {
-  return path.resolve(ROOT, 'app/view/entry/', name, name)
+  return path.resolve(ROOT, 'app/view/entry/', name, 'index')
 }
 
 module.exports = {
@@ -25,7 +25,8 @@ module.exports = {
     ],
     extensions: ['', '.js', '.jsx', '.json'],
     alias: {
-      '@component': path.resolve(ROOT, 'app/view/component')
+      '@component': path.resolve(ROOT, 'app/view/component'),
+      '@lib': path.resolve(ROOT, 'app/view/lib')
     }
   },
   module: {

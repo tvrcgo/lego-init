@@ -7,6 +7,7 @@ exports.plugin = {
     ext: 'html'
   },
   static: {
+    enable: true,
     package: 'lego-static'
   },
   performance: {}

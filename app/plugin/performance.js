@@ -1,5 +1,5 @@
-
 module.exports = function(opts, app) {
+  // performance middleware
   return (ctx, next) => {
     const start = +new Date
     return next().then(() => {
